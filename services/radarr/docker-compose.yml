@@ -7,7 +7,7 @@ services:
       - PGID=1002
       - TZ=Etc/UTC
     volumes:
-      - /opt/sonarr:/config
+      - /opt/radarr:/config
       - /mnt/plex/Movies:/movies
       - /mnt/plex/synced_downloads:/downloads
     ports:
