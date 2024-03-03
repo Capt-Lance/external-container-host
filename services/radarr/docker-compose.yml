@@ -1,0 +1,15 @@
+services:
+  radarr:
+    image: lscr.io/linuxserver/radarr:latest
+    container_name: radarr
+    environment:
+      - PUID=1003
+      - PGID=1002
+      - TZ=Etc/UTC
+    volumes:
+      - /opt/sonarr:/config
+      - /mnt/plex/Movies:/movies
+      - /mnt/plex/synced_downloads:/downloads
+    ports:
+      - 7878:7878
+    restart: unless-stopped
