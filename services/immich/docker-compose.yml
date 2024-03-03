@@ -20,6 +20,8 @@ services:
       - /etc/localtime:/etc/localtime:ro
     env_file:
       - .env
+    environment:
+      - PUID=1004 
     ports:
       - 2283:3001
     depends_on:
