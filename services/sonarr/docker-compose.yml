@@ -7,9 +7,9 @@ services:
       - PGID=1001
       - TZ=Etc/UTC
     volumes:
-      - /opt/sonarr/config:/config
-      - /opt/sonarr/plex/TV_Shows:/tv
-      - /opt/sonarr/plex/synced_downloads:/downloads
+      - /opt/sonarr:/config
+      - /mnt/plex/TV_Shows:/tv
+      - /mnt/plex/synced_downloads:/downloads
     ports:
       - 8989:8989
     restart: unless-stopped
