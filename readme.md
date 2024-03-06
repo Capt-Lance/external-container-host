@@ -9,3 +9,7 @@ Add existing user to group
 Recursively change directory ownership
 
 `sudo chown -R <user>:<group> <directory>
+
+Certbot
+
+`certbot --nginx`
